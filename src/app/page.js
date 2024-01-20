@@ -1,95 +1,80 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Navbar from "@/Common/Navbar";
+import Main from "@/Common/Main";
+import Footer from "@/Common/Footer";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+<>
+<Navbar />
+
+
+
+
+
+
+
+
+
+<section id="hero" className="d-flex align-items-center justify-content-center">
+    <div className="container aos-init aos-animate" data-aos="fade-up">
+
+      <div className="row justify-content-center aos-init aos-animate" data-aos="fade-up" data-aos-delay="150">
+        <div className="col-xl-6 col-lg-8">
+          <h1>Powerful Digital Solutions With Gp<span>.</span></h1>
+          <h2>We are team of talented digital marketers</h2>
         </div>
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="row gy-4 mt-5 justify-content-center aos-init aos-animate" data-aos="zoom-in" data-aos-delay="250">
+        <div className="col-xl-2 col-md-4">
+          <div className="icon-box">
+            <i className="ri-store-line"></i>
+            <h3><a href="">Lorem Ipsum</a></h3>
+          </div>
+        </div>
+        <div className="col-xl-2 col-md-4">
+          <div className="icon-box">
+            <i className="ri-bar-chart-box-line"></i>
+            <h3><a href="">Dolor Sitema</a></h3>
+          </div>
+        </div>
+        <div className="col-xl-2 col-md-4">
+          <div className="icon-box">
+            <i className="ri-calendar-todo-line"></i>
+            <h3><a href="">Sedare Perspiciatis</a></h3>
+          </div>
+        </div>
+        <div className="col-xl-2 col-md-4">
+          <div className="icon-box">
+            <i className="ri-paint-brush-line"></i>
+            <h3><a href="">Magni Dolores</a></h3>
+          </div>
+        </div>
+        <div className="col-xl-2 col-md-4">
+          <div className="icon-box">
+            <i className="ri-database-2-line"></i>
+            <h3><a href="">Nemos Enimade</a></h3>
+          </div>
+        </div>
       </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+    </div>
+  </section>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+
+<Main />
+
+
+
+
+<Footer />
+
+
+
+</>
   );
 }
