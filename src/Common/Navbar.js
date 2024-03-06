@@ -146,10 +146,11 @@ function Navbar() {
   <header id="header" className="fixed-top">
     <div className="container d-flex align-items-center justify-content-lg-between">
 
-      <h1 className="logo me-auto me-lg-0"><a href="index.html"><Image src={logo} width={50} height={50} alt='logo' /></a></h1>
+      {/* <h1 className="logo me-auto me-lg-0"><a href="index.html"><Image src={logo} width={50} height={50} alt='logo' /></a>AICDF</h1> */}
       {/* <!-- Uncomment below if you prefer to use an image logo --> */}
-      {/* <!-- <a href="index.html" className="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" className="img-fluid"></a>--> */}
-
+      <a href="#" className="logo me-auto me-lg-0"><Image src={logo} alt="" width={50} className="img-fluid" />AICDF
+    </a>
+    
       <nav id="navbar" className="navbar order-last order-lg-0">
         <ul>
           <li><a className="nav-link scrollto active" href="#hero">Home</a></li>

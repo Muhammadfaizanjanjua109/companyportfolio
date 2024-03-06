@@ -30,25 +30,25 @@ export default function Home() {
       <div className="row gy-4 mt-5 justify-content-center aos-init aos-animate" data-aos="zoom-in" data-aos-delay="250">
         <div className="col-xl-2 col-md-4" href="#about">
           <div className="icon-box">
-            <i className="ri-store-line"></i>
+          <i class='bx bx-info-square'></i>
             <h3><a  className="nav-link scrollto" href="#about">About</a></h3>
           </div>
         </div>
         <div className="col-xl-2 col-md-4" href="#services">
           <div className="icon-box">
-          <i className="ri-store-line"></i>
+          <i class='bx bxs-briefcase'></i>
             <h3><a  className="nav-link scrollto" href="#services">Services</a></h3>
           </div>
         </div>
         <div className="col-xl-2 col-md-4" href="#portfolio">
           <div className="icon-box">
-          <i className="ri-store-line"></i>
+          <i class='bx bxs-book-content'></i>
             <h3><a  className="nav-link scrollto" href="#portfolio">Courses</a></h3>
           </div>
         </div>
         <div className="col-xl-2 col-md-4" href="#contact">
           <div className="icon-box">
-          <i className="ri-store-line"></i>
+          <i class='bx bxs-contact'></i>
             <h3><a  className="nav-link scrollto" href="#contact">Contact</a></h3>
           </div>
         </div>

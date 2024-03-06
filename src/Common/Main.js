@@ -1,6 +1,6 @@
 import React from 'react'
 import team4 from '../assets/images/team/team-4.jpg'
-import about from '../assets/images/about.jpg'
+import about from '../assets/images/about.gif'
 import portfolio1 from '../assets/images/portfolio/portfolio-1.jpg'
 import portfolio2 from '../assets/images/portfolio/portfolio-2.jpg'
 import portfolio3 from '../assets/images/portfolio/portfolio-3.jpg'
