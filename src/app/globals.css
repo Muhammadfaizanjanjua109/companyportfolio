@@ -3117,3 +3117,53 @@ section {
 .bg-customFaizan{
   background-image: url('../assets//images/features.jpg');
 }
+
+
+.ai-styled-modal .modal-header {
+  border-bottom: none;
+  padding: 20px 30px;
+}
+
+.ai-styled-modal .modal-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.ai-styled-modal .modal-body {
+  padding: 30px;
+}
+
+.ai-styled-modal .modal-subtitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 15px;
+}
+
+.ai-styled-modal .modal-subtitle + p {
+  margin-top: 5px;
+}
+
+.ai-styled-modal .modal-footer {
+  border-top: none;
+  padding: 20px 30px;
+  justify-content: flex-start;
+}
+
+.ai-styled-modal .btn-secondary {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.ai-styled-modal .btn-secondary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+.ai-styled-modal {
+
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}

@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image';
 import React, { useEffect } from 'react'
-import logo from '../assets/images/logo.png'
+import logo from '../assets/images/logo.jpeg'
 function Navbar() {
 
 
@@ -148,7 +148,7 @@ function Navbar() {
 
       {/* <h1 className="logo me-auto me-lg-0"><a href="index.html"><Image src={logo} width={50} height={50} alt='logo' /></a>AICDF</h1> */}
       {/* <!-- Uncomment below if you prefer to use an image logo --> */}
-      <a href="#" className="logo me-auto me-lg-0"><Image src={logo} alt="" width={50} className="img-fluid" />AICDF
+      <a href="#" className="logo me-auto me-lg-0"><Image src={logo} width={70} className='image-fluid' alt=""  />
     </a>
     
       <nav id="navbar" className="navbar order-last order-lg-0">

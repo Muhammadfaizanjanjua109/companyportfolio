@@ -1,4 +1,5 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 import team4 from '../assets/images/team/team-4.jpg'
 import about from '../assets/images/about.gif'
 import portfolio1 from '../assets/images/portfolio/portfolio-1.jpg'
@@ -20,6 +21,8 @@ import testimonials4 from '../assets/images/testimonials/testimonials-4.jpg'
 import Image from 'next/image'
 
 function Main() {
+
+  const [state,setState] = useState('')
   return (
 <>
 
@@ -114,44 +117,135 @@ function Main() {
     
     {/* <!-- End Features Section --> */}
 
-    {/* <!-- ======= Courses Section ======= --> */}
-    <section id="cources" className="services">
-    <div className="container aos-init aos-animate" data-aos="fade-up">
 
-<div className="section-title">
-  <h2>Courses</h2>
-  <p>Explore Our Courses</p>
-</div>
 
-<div className="row">
-  <div className="col-lg-4 col-md-6 d-flex align-items-stretch aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
-    <div className="icon-box">
-      <div className="icon"><i className="bx bxl-dribbble"></i></div>
-      <h4><a href="">Cyber Security Awareness</a></h4>
-      <p>Equip yourself with essential knowledge and skills to stay safe in the digital world.</p>
+
+
+         {/* <!-- ======= Courses Section ======= --> */}
+         <section id="cources" className="services">
+  <div className="container">
+    <div className="section-title">
+      <h2>Courses</h2>
+      <p>Explore Our Courses</p>
+    </div>
+
+    <div className="row">
+      <div className="col-lg-4 col-md-6">
+        <div className="icon-box" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={()=>setState('cyberSecurityModal')}>
+          <div className="icon"><i className="bx bxl-dribbble"></i></div>
+          <h4><a  data-toggle="modal" data-target="#cyberSecurityModal">Cyber Security Awareness</a></h4>
+          <p>Equip yourself with essential knowledge and skills to stay safe in the digital world.</p>
+        </div>
+      </div>
+
+      <div className="col-lg-4 col-md-6">
+        <div className="icon-box" onClick={()=>setState('safeCyberChildrenModal')}>
+          <div className="icon"><i className="bx bx-file"></i></div>
+          <h4><a  data-toggle="modal" data-target="#safeCyberChildrenModal ">Safe Cyber for Children</a></h4>
+          <p>Empower children with the tools and knowledge to navigate cyberspace securely.</p>
+        </div>
+      </div>
+
+      <div className="col-lg-4 col-md-6">
+        <div className="icon-box" onClick={()=>setState('safeCyberElderlyModal')}>
+          <div className="icon"><i className="bx bx-tachometer"></i></div>
+          <h4><a data-toggle="modal" data-target="#safeCyberElderlyModal">Safe Cyber Practices for Elderly</a></h4>
+          <p>Provide elderly individuals with practical strategies for staying safe online.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{/* <!-- Modal for Cyber Security Awareness --> */}
+<div className={`modal fade ${state === 'cyberSecurityModal' ? 'show ai-styled-modal' : ''}`} id="cyberSecurityModal" tabIndex="-1" role="dialog" aria-labelledby="cyberSecurityModalLabel" style={{ display: state === 'cyberSecurityModal' ? 'block' : 'none' }} aria-hidden="true">
+  <div className="modal-dialog" role="document">
+    <div className="modal-content ai-styled-content">
+      <div className="modal-header">
+        <h5 className="modal-title" id="cyberSecurityModalLabel">Cyber Security Awareness</h5>
+        <button type="button" className="close btn btn-warning" data-dismiss="modal" aria-label="Close" onClick={() => setState('')}>
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div className="modal-body">
+        <h5>Course Description:</h5>
+        <p>Equip yourself with essential knowledge and skills to stay safe in the digital world.</p>
+        <h5>Learning Outcomes:</h5>
+        <p>- Understand common cyber threats<br />- Learn best practices for online safety<br />- Enhance your awareness of cybersecurity measures</p>
+        <h5>Duration:</h5>
+        <p>2 hours</p>
+        <h5>Availability:</h5>
+        <p>Available anytime</p>
+        <h5>Cost:</h5>
+        <p>Free</p>
+      </div>
+      <div className="modal-footer">
+        <button type="button" onClick={() => setState('')} className="btn btn-warning" data-dismiss="modal">Close</button>
+      </div>
     </div>
   </div>
+</div>
 
-  <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
-    <div className="icon-box">
-      <div className="icon"><i className="bx bx-file"></i></div>
-      <h4><a href="">Safe Cyber for Children</a></h4>
-      <p>Empower children with the tools and knowledge to navigate cyberspace securely.</p>
-    </div>
-  </div>
 
-  <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300">
-    <div className="icon-box">
-      <div className="icon"><i className="bx bx-tachometer"></i></div>
-      <h4><a href="">Safe Cyber Practices for Elderly</a></h4>
-      <p>Provide elderly individuals with practical strategies for staying safe online.</p>
+{/* <!-- Modals for other courses (Safe Cyber for Children and Safe Cyber Practices for Elderly) will follow a similar structure --> */}
+<div className={`modal fade ${state === 'safeCyberChildrenModal' ? 'show ai-styled-modal' : ''}`} id="safeCyberChildrenModal" tabIndex="-1" role="dialog" aria-labelledby="safeCyberChildrenModalLabel" style={{ display: state === 'safeCyberChildrenModal' ? 'block' : 'none' }} aria-hidden="true">
+  <div className="modal-dialog" role="document">
+    <div className="modal-content ai-styled-content">
+      <div className="modal-header">
+        <h5 className="modal-title" id="safeCyberChildrenModalLabel">Safe Cyber for Children</h5>
+        <button type="button"  className="btn btn-warning" data-dismiss="modal" aria-label="Close" onClick={() => setState('')}>
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div className="modal-body">
+        <h5>Course Description:</h5>
+        <p>Empower children with the tools and knowledge to navigate cyberspace securely.</p>
+        <h5>Learning Outcomes:</h5>
+        <p>- Understand online safety rules<br />- Learn how to identify and avoid online risks<br />- Develop digital literacy skills</p>
+        <h5>Duration:</h5>
+        <p>1.5 hours</p>
+        <h5>Availability:</h5>
+        <p>Available anytime</p>
+        <h5>Cost:</h5>
+        <p>Free</p>
+      </div>
+      <div className="modal-footer">
+        <button type="button" onClick={() => setState('')} className="btn btn-warning" data-dismiss="modal">Close</button>
+      </div>
     </div>
   </div>
 </div>
 
+
+<div className={`modal fade ${state === 'safeCyberElderlyModal' ? 'show ai-styled-modal' : ''}`} id="safeCyberElderlyModal" tabIndex="-1" role="dialog" aria-labelledby="safeCyberElderlyModalLabel" style={{ display: state === 'safeCyberElderlyModal' ? 'block' : 'none' }} aria-hidden="true">
+  <div className="modal-dialog" role="document">
+    <div className="modal-content ai-styled-content">
+      <div className="modal-header">
+        <h5 className="modal-title" id="safeCyberElderlyModalLabel">Safe Cyber Practices for Elderly</h5>
+        <button type="button" className="close btn btn-warning" data-dismiss="modal" aria-label="Close" onClick={() => setState('')}>
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div className="modal-body">
+        <h5>Course Description:</h5>
+        <p>Provide elderly individuals with practical strategies for staying safe online.</p>
+        <h5>Learning Outcomes:</h5>
+        <p>- Recognize common online scams targeting the elderly<br />- Learn how to create strong passwords and secure online accounts<br />- Understand privacy settings and safe browsing practices</p>
+        <h5>Duration:</h5>
+        <p>1.5 hours</p>
+        <h5>Availability:</h5>
+        <p>Available anytime</p>
+        <h5>Cost:</h5>
+        <p>Free</p>
+      </div>
+      <div className="modal-footer">
+        <button type="button" onClick={() => setState('')} className="btn  btn-warning" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
 
-    </section>
     {/* <!-- End Services Section --> */}
 
     {/* <!-- ======= Cta Section ======= --> */}
