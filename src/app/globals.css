@@ -305,6 +305,22 @@ h6 {
   transition: 0.5s;
 }
 
+@media (max-width: 991.98px) { 
+  
+.mob{
+  flex-direction: column !important;
+}
+
+.mob-div{
+  min-width: 100% !important;
+}
+
+}
+
+
+
+
+
 @media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
@@ -1695,7 +1711,21 @@ h6 {
 #header.header-inner-pages {
   background: rgba(0, 0, 0, 0.8);
 }
-
+.w-20{
+  width: 20% !important;
+}
+.services_heading{
+  font-weight: 700;
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
+}
+.cardHeight{
+  min-height: 15rem;
+}
+.font-size-15{
+  font-weight: 700;
+  font-size: 15px !important;
+}
 #header .logo {
   color: #2479c1 !important;
   font-size: 22px;

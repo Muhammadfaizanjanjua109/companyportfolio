@@ -1,23 +1,10 @@
 'use client'
 import React, { useState } from 'react'
-import team4 from '../assets/images/team/team-4.jpg'
 import about from '../assets/images/about.gif'
-import portfolio1 from '../assets/images/portfolio/portfolio-1.jpg'
-import portfolio2 from '../assets/images/portfolio/portfolio-2.jpg'
-import portfolio3 from '../assets/images/portfolio/portfolio-3.jpg'
-import portfolio4 from '../assets/images/portfolio/portfolio-4.jpg'
-import portfolio5 from '../assets/images/portfolio/portfolio-5.jpg'
-import portfolio6 from '../assets/images/portfolio/portfolio-6.jpg'
-import portfolio7 from '../assets/images/portfolio/portfolio-7.jpg'
-import portfolio8 from '../assets/images/portfolio/portfolio-8.jpg'
-import portfolio9 from '../assets/images/portfolio/portfolio-9.jpg'
-
-
-
-import testimonials1 from '../assets/images/testimonials/testimonials-1.jpg'
-import testimonials2 from '../assets/images/testimonials/testimonials-2.jpg'
-import testimonials3 from '../assets/images/testimonials/testimonials-3.jpg'
-import testimonials4 from '../assets/images/testimonials/testimonials-4.jpg'
+import scamwatch from '../assets/svg/scamwatch.png'
+import GitHub from '../assets/svg/GitHub-logo.png'
+import forensic from '../assets/svg/forensic-focus-logo.png'
+import commingSoon from '../assets/svg/commingSoon.png'
 import Image from 'next/image'
 
 function Main() {
@@ -89,6 +76,7 @@ function Main() {
   <div className="row">
     <div className="image col-lg-6 aos-init aos-animate bg-customFaizan"   data-aos="fade-right"></div>
     <div className="col-lg-6 aos-init aos-animate" data-aos="fade-left" data-aos-delay="100">
+    <h3 className='services_heading text-center'>Our Serives</h3>
       <div className="icon-box mt-5 mt-lg-0 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="150">
         <i className="bx bx-receipt"></i>
         <h4>Consultancy Services</h4>
@@ -117,9 +105,60 @@ function Main() {
     
     {/* <!-- End Features Section --> */}
 
+{/* start of resources section */}
+
+<section id="resources" className="services">
+  <div className="container">
+    <div className="section-title">
+      <h2>Resources</h2>
+      <p>Explore Our Resources</p>
+    </div>
+
+    <div className="d-flex justify-content-center p-2 w-100 mob">
+      <div className="w-20  ms-1 me-1 mob-div">
+        <a href='https://www.scamwatch.gov.au' className="card p-3 cardHeight  d-flex justify-content-center align-items-center" >
+          <div className=" "><Image width={200} src={scamwatch} alt='scamWatch' /></div>
+          <h4><p className='font-size-15'>Scamwatch</p></h4>
+        </a>
+      </div>
+ 
+
+      <div className="w-20  ms-1 me-1 mob-div">
+        <a href='https://www.forensicfocus.com' className="card p-3 cardHeight d-flex justify-content-center align-items-center"  >
+          <div className=" "><Image width={200}  src={forensic} alt='scamWatch' /></div>
+          <h4><p className='font-size-15 '>Forensic Focus</p></h4>
+        </a>
+      </div>
+
+      <div className="w-20  ms-1 me-1 mob-div">
+        <a href='https://github.com/forensicswiki/wiki' className="card p-3 cardHeight  d-flex justify-content-center align-items-center" >
+          <div className=" "><Image width={150}  src={GitHub} alt='scamWatch' /></div>
+          <h4><p className='font-size-15'>ForensicsWiki</p></h4>
+        </a>
+      </div>
 
 
+      <div className="w-20  ms-1 me-1 mob-div">
+        <a href='https://github.com/cugu/awesome-forensics' className="card p-3 cardHeight  d-flex justify-content-center align-items-center" >
+          <div className=" "><Image width={150}  src={GitHub} alt='scamWatch' /></div>
+          <h4><p className='font-size-15'>Awesome Forensics</p></h4>
+        </a>
+      </div>
+     
+      <div className="w-20  ms-1 me-1 mob-div">
+        <a href='#' className="card p-3 cardHeight  d-flex justify-content-center align-items-center" >
+          <div className=" "><Image width={200} src={commingSoon} alt='scamWatch' /></div>
+          <h4><p className='font-size-15'>Learning Management System</p></h4>
+        </a>
+      </div>
+      
+     
+    </div>
 
+  </div>
+</section>
+
+{/* end of resources section */}
 
          {/* <!-- ======= Courses Section ======= --> */}
          <section id="cources" className="services">
