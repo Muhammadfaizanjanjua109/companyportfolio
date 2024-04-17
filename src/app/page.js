@@ -13,7 +13,7 @@ export default function Home() {
 
           <div className="row justify-content-center aos-init aos-animate" data-aos="fade-up" data-aos-delay="150">
             <div className="col-xl-6 col-lg-8">
-              <h1>Australian institute of cybersecurity and Digital forenscs<span>.</span></h1>
+              <h1>Australian Institute of Cybersecurity and Digital Forenscs<span>.</span></h1>
               <h2>Empowering Cyber Resilience Together</h2>
             </div>
           </div>

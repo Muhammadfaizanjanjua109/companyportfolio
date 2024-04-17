@@ -406,7 +406,7 @@ h6 {
 #hero {
   width: 100%;
   min-height: 100vh;
-  background: url("../assets/images/hero-bg.jpg") top center;
+  background: url("../assets/images/hero-bg.png") top center;
   background-size: cover;
   position: relative;
 }
@@ -1697,11 +1697,12 @@ h6 {
 }
 
 #header .logo {
-  font-size: 32px;
+  color: #2479c1 !important;
+  font-size: 22px;
   margin: 0;
   padding: 0;
   line-height: 1;
-  font-weight: 700;
+  font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -1972,7 +1973,7 @@ h6 {
 #hero {
   width: 100%;
   min-height: 100vh;
-  background: url("../assets/images/hero-bg.jpg") top center;
+  background: url("../assets/images/hero-bg.png") top center;
   background-size: cover;
   position: relative;
 }

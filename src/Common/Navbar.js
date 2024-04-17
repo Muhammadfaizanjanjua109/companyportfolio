@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image';
 import React, { useEffect } from 'react'
-import logo from '../assets/images/logo.jpeg'
+import logo from '../assets/images/logo.png'
 function Navbar() {
 
 
@@ -146,10 +146,10 @@ function Navbar() {
   <header id="header" className="fixed-top">
     <div className="container d-flex align-items-center justify-content-lg-between">
 
-      {/* <h1 className="logo me-auto me-lg-0"><a href="index.html"><Image src={logo} width={50} height={50} alt='logo' /></a>AICDF</h1> */}
+      <h1 className="logo me-auto me-lg-0 "><a href="index.html"><Image src={logo} width={50} height={50} alt='logo' /></a>AICDF</h1>
       {/* <!-- Uncomment below if you prefer to use an image logo --> */}
-      <a href="#" className="logo me-auto me-lg-0"><Image src={logo} width={70} className='image-fluid' alt=""  />
-    </a>
+      {/* <a href="#" className="logo me-auto me-lg-0"><Image src={logo} width={70} className='image-fluid' alt=""  />
+    </a> */}
     
       <nav id="navbar" className="navbar order-last order-lg-0">
         <ul>
