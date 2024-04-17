@@ -31,6 +31,12 @@ export default function Home() {
                 <h3><a className="nav-link scrollto" href="#services">Services</a></h3>
               </div>
             </div>
+            <div className="col-xl-2 col-md-4" href="#resources">
+              <div className="icon-box">
+              <i class='bx bxl-sketch'></i>
+                <h3><a className="nav-link scrollto" href="#resources">Resources</a></h3>
+              </div>
+            </div>
             <div className="col-xl-2 col-md-4" href="#cources">
               <div className="icon-box">
                 <i class='bx bxs-book-content'></i>

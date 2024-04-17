@@ -116,7 +116,7 @@ function Main() {
 
     <div className="d-flex justify-content-center p-2 w-100 mob">
       <div className="w-20  ms-1 me-1 mob-div">
-        <a href='https://www.scamwatch.gov.au' className="card p-3 cardHeight  d-flex justify-content-center align-items-center" >
+        <a href='https://www.scamwatch.gov.au' target="_blank" className="card p-3 cardHeight  d-flex justify-content-center align-items-center" >
           <div className=" "><Image width={200} src={scamwatch} alt='scamWatch' /></div>
           <h4><p className='font-size-15'>Scamwatch</p></h4>
         </a>
@@ -124,14 +124,14 @@ function Main() {
  
 
       <div className="w-20  ms-1 me-1 mob-div">
-        <a href='https://www.forensicfocus.com' className="card p-3 cardHeight d-flex justify-content-center align-items-center"  >
+        <a href='https://www.forensicfocus.com' target="_blank" className="card p-3 cardHeight d-flex justify-content-center align-items-center"  >
           <div className=" "><Image width={200}  src={forensic} alt='scamWatch' /></div>
           <h4><p className='font-size-15 '>Forensic Focus</p></h4>
         </a>
       </div>
 
       <div className="w-20  ms-1 me-1 mob-div">
-        <a href='https://github.com/forensicswiki/wiki' className="card p-3 cardHeight  d-flex justify-content-center align-items-center" >
+        <a href='https://github.com/forensicswiki/wiki' target="_blank" className="card p-3 cardHeight  d-flex justify-content-center align-items-center" >
           <div className=" "><Image width={150}  src={GitHub} alt='scamWatch' /></div>
           <h4><p className='font-size-15'>ForensicsWiki</p></h4>
         </a>
@@ -139,7 +139,7 @@ function Main() {
 
 
       <div className="w-20  ms-1 me-1 mob-div">
-        <a href='https://github.com/cugu/awesome-forensics' className="card p-3 cardHeight  d-flex justify-content-center align-items-center" >
+        <a href='https://github.com/cugu/awesome-forensics' target="_blank" className="card p-3 cardHeight  d-flex justify-content-center align-items-center" >
           <div className=" "><Image width={150}  src={GitHub} alt='scamWatch' /></div>
           <h4><p className='font-size-15'>Awesome Forensics</p></h4>
         </a>
