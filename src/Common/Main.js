@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react'
-import about from '../assets/images/about.gif'
+import about from '../assets/images/about.jpg'
 import scamwatch from '../assets/svg/scamwatch.png'
 import GitHub from '../assets/svg/GitHub-logo.png'
 import forensic from '../assets/svg/forensic-focus-logo.png'
@@ -688,29 +688,16 @@ function Main() {
 
     <div className="row">
 
-      <div className="col-lg-6">
-        <div className="info-box mb-4">
-          <i className="bx bx-map"></i>
-          <h3>Our Address</h3>
-          <p>123 Cybersecurity Street, Digital City, Cyberland</p>
-        </div>
-      </div>
+    
 
       <div className="col-lg-3 col-md-6">
         <div className="info-box  mb-4">
           <i className="bx bx-envelope"></i>
           <h3>Email Us</h3>
-          <p>info@aicdf.com</p>
+          <p>info.aicdf.au</p>
         </div>
       </div>
 
-      <div className="col-lg-3 col-md-6">
-        <div className="info-box  mb-4">
-          <i className="bx bx-phone-call"></i>
-          <h3>Call Us</h3>
-          <p>+123 456 7890</p>
-        </div>
-      </div>
 
     </div>
 
@@ -719,14 +706,15 @@ function Main() {
         <form action="#" method="post" role="form" className="php-email-form">
           <div className="row">
             <div className="col-md-6 form-group">
-              <input type="text" name="name" className="form-control" id="name" placeholder="Your Name" required />
+              <input type="text" name="name" className="form-control" id="name" placeholder="First Name" required />
             </div>
-            <div className="col-md-6 form-group mt-3 mt-md-0">
-              <input type="email" className="form-control" name="email" id="email" placeholder="Your Email" required />
+            <div className="col-md-6 form-group">
+              <input type="text" name="name" className="form-control" id="name" placeholder="Last Name" required />
             </div>
+           
           </div>
           <div className="form-group mt-3">
-            <input type="text" className="form-control" name="subject" id="subject" placeholder="Subject" required />
+            <input type="text" className="form-control" name="subject" id="subject" placeholder="Your Contact" required />
           </div>
           <div className="form-group mt-3">
             <textarea className="form-control" name="message" rows="5" placeholder="Message" required></textarea>

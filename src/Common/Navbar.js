@@ -88,7 +88,6 @@ function Navbar() {
           window.addEventListener('load', toggleBacktotop);
           onscroll(document, toggleBacktotop);
         }
-    
         on('click', '.mobile-nav-toggle', function (e) {
           select('#navbar').classList.toggle('navbar-mobile');
           this.classList.toggle('bi-list');
@@ -137,7 +136,7 @@ function Navbar() {
   
   <header id="header" className="fixed-top">
     <div className="container d-flex align-items-center justify-content-lg-between">
-      <h1 className="logo me-auto me-lg-0 "><a href="index.html"><Image src={logo} width={50} height={50} alt='logo' /></a>AICDF</h1>
+    <a href="index.html"><Image src={logo} width={370} height={90} alt='logo' /></a>
       {/* <!-- Uncomment below if you prefer to use an image logo --> */}
       {/* <a href="#" className="logo me-auto me-lg-0"><Image src={logo} width={70} className='image-fluid' alt=""  />
     </a> */}
