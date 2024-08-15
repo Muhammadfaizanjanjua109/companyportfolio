@@ -12,10 +12,7 @@ function Footer() {
               <div className="footer-info">
                
                  <p>
-                   Street <br />
-                   1111111, Country<br /><br />
-                   <strong>Phone:</strong> +1 1111 22222 33<br />
-                   <strong>Email:</strong> Email@example.com<br />
+                   
                  </p>
                 <div className="social-links mt-3">
                   <a href="#" className="twitter"><i className="bx bxl-twitter"></i></a>
@@ -46,10 +43,7 @@ function Footer() {
               <div className="footer-links">
                 <h4>Contact Us</h4>
                 <p>
-                   Street <br />
-                   1111111, Country<br /><br />
-                   <strong>Phone:</strong> +1 1111 22222 33<br />
-                   <strong>Email:</strong> Email@example.com<br />
+                   
                  </p>
               </div>
             </div>
