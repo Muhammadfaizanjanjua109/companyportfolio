@@ -692,9 +692,8 @@ function Main() {
 
       <div className="col-lg-3 col-md-6">
         <div className="info-box  mb-4">
-          <i className="bx bx-envelope"></i>
           <h3>Email Us</h3>
-          <p>info.aicdf.au</p>
+          <p>info@aicdf.au</p>
         </div>
       </div>
 
