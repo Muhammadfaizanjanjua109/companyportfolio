@@ -11,12 +11,12 @@ function Footer() {
             <div className="col-lg-4 col-md-6">
               <div className="footer-info">
                
-                // <p>
-                //   A108 Adam Street <br />
-                //   NY 535022, USA<br /><br />
-                //   <strong>Phone:</strong> +1 5589 55488 55<br />
-                //   <strong>Email:</strong> info@example.com<br />
-                // </p>
+                 <p>
+                   Street <br />
+                   1111111, Country<br /><br />
+                   <strong>Phone:</strong> +1 1111 22222 33<br />
+                   <strong>Email:</strong> Email@example.com<br />
+                 </p>
                 <div className="social-links mt-3">
                   <a href="#" className="twitter"><i className="bx bxl-twitter"></i></a>
                   <a href="#" className="facebook"><i className="bx bxl-facebook"></i></a>
@@ -46,11 +46,11 @@ function Footer() {
               <div className="footer-links">
                 <h4>Contact Us</h4>
                 <p>
-                  A108 Adam Street <br />
-                  NY 535022, USA<br /><br />
-                  <strong>Phone:</strong> +1 5589 55488 55<br />
-                  <strong>Email:</strong> info@example.com<br />
-                </p>
+                   Street <br />
+                   1111111, Country<br /><br />
+                   <strong>Phone:</strong> +1 1111 22222 33<br />
+                   <strong>Email:</strong> Email@example.com<br />
+                 </p>
               </div>
             </div>
 
