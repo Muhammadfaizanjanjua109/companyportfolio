@@ -10,7 +10,7 @@ function Footer() {
             {/* First column */}
             <div className="col-lg-4 col-md-6">
               <div className="footer-info">
-               
+               <h4>Social Media</h4>
                  <p>
                    
                  </p>
@@ -43,7 +43,7 @@ function Footer() {
               <div className="footer-links">
                 <h4>Contact Us</h4>
                 <p>
-                   
+                   http://info.aicdf.au
                  </p>
               </div>
             </div>
