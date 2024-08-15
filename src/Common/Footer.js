@@ -43,7 +43,7 @@ function Footer() {
               <div className="footer-links">
                 <h4>Contact Us</h4>
                 <p>
-                   info.aicdf.au
+                   Email: info.aicdf.au
                  </p>
               </div>
             </div>
