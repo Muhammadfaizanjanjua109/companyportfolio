@@ -3,7 +3,7 @@
 deploy:
   commands:
     # Navigate to the application directory
-    - cd /home/aicdf
+    - cd /home/aiai11255/repositories/companyportfolio
 
     # Install dependencies
     - npm install
